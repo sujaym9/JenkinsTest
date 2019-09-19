@@ -1,6 +1,5 @@
-pipeline {
-   node {
-    checkout scm 
-    /* .. snip .. */
-}
-}
+ stage('Checkout code') {
+        steps {
+            checkout scm
+        }
+    }
